@@ -5,7 +5,7 @@ conn = psycopg2.connect(
 )
 cur = conn.cursor()
 
-cur.execute("SELECT * FROM users;")
+cur.execute("SELECT * FROM Admin;")
 rows = cur.fetchall()
 
 for row in rows:
